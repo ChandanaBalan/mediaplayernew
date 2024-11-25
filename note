@@ -1,0 +1,59 @@
+call addvideoApi
+storing the data from api using async(before function) await(before api)
+passing request body now it is the state videodetails
+addvideoapi() function definition in allapi
+to use addvideoapi we should export the function
+call commonapi inside this function 
+first argument of commonapi is 
+http request
+url - serverurl - it is stored in a separate js file there path of local host is mentioned and also should export to use
+in the serverurl the file inside the db.json - videos
+3rd argument - requestbody
+common api () function defenition
+confirm that it is exported then onlu we can use it.
+axios
+
+then to index.js
+server to use the middleware
+
+middleware - the json format sent by axios is converted to js
+
+json is a dummy server
+
+a response is gone from the db.json to frontend 
+the response first come in common api if it is positive response then will work or else catch will work
+the result is returned
+
+
+
+
+Type of dependencies
+
+1)no dependency - calls in every render
+2)empty array([]) - useEffect - call when the component render in to browser
+3)passing states or props [state, props] - call when the component render into the browser as well as the value of the state or props change
+
+state lifting
+-----------------
+- the process of sharing data between the components (other than parent and child)
+- state is created in the closest common ancestor
+- function to change the state is passed to the component which provide data and state is passed to the component which display data
+
+
+sharing data to the server side
+-----------------------------------
+1) Body parameter
+2) Path parameter - 
+3) Query parameter
+
+Intl.DateTimeFormat
+---------------------------
+The Intl.DateTimeFormat object enables language-sensitive date and time formatting.
+
+Drag and Drop
+-----------------
+1) draggable - provided to the element which need to be dragged
+2) droppable - provided to the element where the dropping happends
+3) onDragStart - setData("key", "value") - data share
+4) onDragOver
+5) onDrop - getData(key) - access data
