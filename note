@@ -57,3 +57,24 @@ Drag and Drop
 3) onDragStart - setData("key", "value") - data share
 4) onDragOver
 5) onDrop - getData(key) - access data
+
+disadvantage of state lifting
+-----------------------------------
+
+prop drilling : occurs when a parent component generate it's state and passes it down has props to it's children component that do not consumes the props instead they only passes it down to another component that finally consumes it
+
+coupling
+-----------
+interdependency of components .
+
+elongated props
+-------------------
+props which are neither created nor consumed by components are called elongated props
+
+state lifting is not prefered in large projects because it can cause data loss . if any of these components is not working it will affect the data to share.
+it is used in small scale projects.
+
+- redux - statement management
+----------------------------
+
+it is a external library used for state change.
